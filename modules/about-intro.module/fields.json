@@ -1,0 +1,21 @@
+[ {
+  "id" : "5f2df0b6-1581-be77-e09d-170467eed9c0",
+  "name" : "description",
+  "label" : "description",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "I’m a junior Flutter developer with hands-on experience building real features from scratch, including authentication flows, state management, local storage, and API integration.I believe good apps are built with:Clear architecturePredictable stateThoughtful UI/UXContinuous learningI’m currently focused on sharpening my skills to reach a solid junior-to-mid level through consistent practice and real-world scenarios."
+}, {
+  "id" : "9fda0a84-9c40-b25a-00ac-91b25e1f44d2",
+  "name" : "section_title",
+  "label" : "section_title",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "About Me"
+} ]

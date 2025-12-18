@@ -1,0 +1,42 @@
+[ {
+  "id" : "db041e65-be99-619f-5cf7-20acb50db10a",
+  "name" : "profile_image",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://147143932.fs1.hubspotusercontent-eu1.net/hubfs/147143932/car1-2.jpeg",
+    "alt" : "car1-2",
+    "loading" : "lazy",
+    "width" : 300,
+    "height" : 168,
+    "max_width" : 300,
+    "max_height" : 168
+  }
+}, {
+  "id" : "6a78b39e-4e51-8bd2-4580-7b9092f4d50b",
+  "name" : "headline",
+  "label" : "Text",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Hi, I’m Ahmed 👋"
+}, {
+  "id" : "f971786d-0b3e-96e7-5f08-7444c94d394b",
+  "name" : "subheadline",
+  "label" : "Sub Headline",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Flutter Developer"
+} ]

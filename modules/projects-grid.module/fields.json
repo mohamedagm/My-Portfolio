@@ -1,0 +1,186 @@
+[ {
+  "id" : "cea063e2-73de-44df-d509-5f018e151222",
+  "name" : "section_title",
+  "label" : "Section Title",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "MY ProJECTS"
+}, {
+  "id" : "6a68357b-d11d-da0e-060d-9a3bf0b7b040",
+  "name" : "projects",
+  "label" : "Projects",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 4,
+    "max" : 4,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : null,
+    "controlling_value_regex" : null,
+    "property" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "f70ba501-5585-668b-d74f-11b6d3659cba",
+    "name" : "project_image",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://147143932.fs1.hubspotusercontent-eu1.net/hubfs/147143932/car2-1.jpeg",
+      "alt" : "car2-1",
+      "loading" : "lazy",
+      "width" : 259,
+      "height" : 194,
+      "max_width" : 259,
+      "max_height" : 194
+    }
+  }, {
+    "id" : "0dd8694b-287d-faba-3164-2c694b843913",
+    "name" : "project_name",
+    "label" : "project_name",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Mego"
+  }, {
+    "id" : "bc0b9f4c-0049-ffed-55b4-34eff3db0e70",
+    "name" : "project_description",
+    "label" : "project_description",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "project_description project_descriptionproject_descriptionproject_descriptionproject_description"
+  }, {
+    "id" : "fd455091-35d4-f9b6-a9ee-5ca976bad480",
+    "name" : "project_link",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "FILE", "CONTENT", "BLOG", "PAYMENT", "EMAIL_ADDRESS", "PHONE_NUMBER" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://github.com/mohamedagm/MegoFood",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "project_image" : {
+      "size_type" : "auto",
+      "src" : "https://147143932.fs1.hubspotusercontent-eu1.net/hubfs/147143932/car2-1.jpeg",
+      "alt" : "car2-1",
+      "loading" : "lazy",
+      "width" : 259,
+      "height" : 194,
+      "max_width" : 259,
+      "max_height" : 194
+    },
+    "project_name" : "Mego",
+    "project_description" : "project_description project_descriptionproject_descriptionproject_descriptionproject_description",
+    "project_link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://github.com/mohamedagm/MegoFood",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "project_image" : {
+      "size_type" : "auto",
+      "src" : "https://147143932.fs1.hubspotusercontent-eu1.net/hubfs/147143932/car2-1.jpeg",
+      "alt" : "car2-1",
+      "loading" : "lazy",
+      "width" : 259,
+      "height" : 194,
+      "max_width" : 259,
+      "max_height" : 194
+    },
+    "project_name" : "Mego",
+    "project_description" : "project_description project_descriptionproject_descriptionproject_descriptionproject_description",
+    "project_link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://github.com/mohamedagm/MegoFood",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "project_image" : {
+      "size_type" : "auto",
+      "src" : "https://147143932.fs1.hubspotusercontent-eu1.net/hubfs/147143932/car2-1.jpeg",
+      "alt" : "car2-1",
+      "loading" : "lazy",
+      "width" : 259,
+      "height" : 194,
+      "max_width" : 259,
+      "max_height" : 194
+    },
+    "project_name" : "Mego",
+    "project_description" : "project_description project_descriptionproject_descriptionproject_descriptionproject_description",
+    "project_link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://github.com/mohamedagm/MegoFood",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "project_image" : {
+      "size_type" : "auto",
+      "src" : "https://147143932.fs1.hubspotusercontent-eu1.net/hubfs/147143932/car2-1.jpeg",
+      "alt" : "car2-1",
+      "loading" : "lazy",
+      "width" : 259,
+      "height" : 194,
+      "max_width" : 259,
+      "max_height" : 194
+    },
+    "project_name" : "Mego",
+    "project_description" : "project_description project_descriptionproject_descriptionproject_descriptionproject_description",
+    "project_link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://github.com/mohamedagm/MegoFood",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

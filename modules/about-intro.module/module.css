@@ -1,0 +1,281 @@
+/* ========================================
+   ABOUT SECTION - GRADUAL LIGHTENING
+   ======================================== */
+
+/* السيكشن الرئيسي - جراديينت أفتح من الهيرو */
+.about-intro {
+  position: relative;
+  padding: 140px 0 160px;
+  background: linear-gradient(180deg, #16213e 0%, #1e2d47 30%, #253a52 60%, #2d475d 100%);
+  overflow: hidden;
+}
+
+/* طبقة ديكور خفيفة - بنفس النسق */
+.about-intro::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.08), transparent 60%);
+  filter: blur(90px);
+  pointer-events: none;
+  animation: decorPulse 8s ease-in-out infinite;
+}
+
+/* طبقة ديكور ثانية من الناحية الثانية */
+.about-intro::after {
+  content: "";
+  position: absolute;
+  bottom: -180px;
+  left: -180px;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(79, 70, 229, 0.06), transparent 65%);
+  filter: blur(80px);
+  pointer-events: none;
+  animation: decorPulse 8s ease-in-out infinite 2s;
+}
+
+/* الكونتينر */
+.about-intro .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* العنوان - تصميم فخم مع جراديينت */
+.about-title {
+  text-align: center;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 35px;
+  background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 40%, #c7d2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.6px;
+  line-height: 1.2;
+  position: relative;
+  text-shadow: 0 0 40px rgba(139, 92, 246, 0.2);
+  animation: titleFadeIn 0.8s ease-out;
+}
+
+/* خط ديكور أنيق تحت العنوان */
+.about-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.7), rgba(79, 70, 229, 0.7), transparent);
+  margin: 24px auto 0;
+  border-radius: 3px;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
+  animation: lineExpand 0.8s ease-out 0.3s backwards;
+}
+
+/* كارد الوصف - glass effect فخم */
+.about-description {
+  max-width: 880px;
+  margin: 55px auto 0;
+  padding: 55px 50px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.9;
+  color: rgba(226, 232, 240, 0.95);
+  /* خلفية شبه شفافة مع blur */
+  background: rgba(30, 45, 71, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 24px;
+  /* border فخم بجراديينت */
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  /* shadow متعدد الطبقات */
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 20px 60px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 40px rgba(139, 92, 246, 0.03);
+  /* أنيميشن دخول */
+  animation: cardFadeUp 0.8s ease-out 0.2s backwards;
+  /* transition سلس */
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* تأثير لمعان خفيف على الكارد */
+.about-description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(139, 92, 246, 0.1),
+    transparent
+  );
+  transition: left 0.8s ease;
+}
+
+.about-description:hover::before {
+  left: 100%;
+}
+
+/* hover effect على الكارد */
+.about-description:hover {
+  transform: translateY(-6px);
+  border-color: rgba(139, 92, 246, 0.35);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.35),
+    0 25px 70px rgba(0, 0, 0, 0.25),
+    0 0 60px rgba(139, 92, 246, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    inset 0 0 50px rgba(139, 92, 246, 0.05);
+}
+
+/* الفقرات داخل الوصف */
+.about-description p {
+  margin-bottom: 22px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: rgba(226, 232, 240, 0.92);
+}
+
+.about-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* تحسين القراءة - أول حرف */
+.about-description p:first-of-type::first-letter {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: rgba(196, 181, 253, 0.9);
+  margin-right: 3px;
+}
+
+/* ==================== ANIMATIONS ==================== */
+
+/* نبض للديكور */
+@keyframes decorPulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+}
+
+/* fade in للعنوان */
+@keyframes titleFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* توسع الخط */
+@keyframes lineExpand {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100px;
+    opacity: 1;
+  }
+}
+
+/* fade up للكارد */
+@keyframes cardFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+/* تابلت */
+@media (max-width: 1024px) {
+  .about-intro {
+    padding: 120px 0 140px;
+  }
+
+  .about-description {
+    padding: 48px 42px;
+    max-width: 780px;
+    margin-top: 48px;
+  }
+
+  .about-title {
+    margin-bottom: 32px;
+  }
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+  .about-intro {
+    padding: 100px 24px 120px;
+  }
+
+  .about-title {
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+  }
+
+  .about-title::after {
+    width: 80px;
+    margin-top: 20px;
+  }
+
+  .about-description {
+    margin-top: 42px;
+    padding: 40px 32px;
+    font-size: 17px;
+    line-height: 1.85;
+    border-radius: 20px;
+  }
+
+  .about-description p {
+    margin-bottom: 20px;
+  }
+
+  .about-description p:first-of-type::first-letter {
+    font-size: 1.6em;
+  }
+}
+
+/* شاشات صغيرة جداً */
+@media (max-width: 480px) {
+  .about-intro {
+    padding: 80px 20px 100px;
+  }
+
+  .about-title::after {
+    width: 70px;
+  }
+
+  .about-description {
+    padding: 36px 28px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .about-description p {
+    margin-bottom: 18px;
+  }
+}

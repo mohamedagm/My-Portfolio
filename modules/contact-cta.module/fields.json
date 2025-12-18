@@ -1,0 +1,79 @@
+[ {
+  "id" : "82dc3120-c741-8e25-b01c-a47058834484",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Let’s Work Together"
+}, {
+  "id" : "f1b8ccf2-862a-719d-deb6-982da4ce2528",
+  "name" : "description",
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Have a project in mind or want to collaborate? Let’s talk."
+}, {
+  "id" : "215de9a7-c33d-a4fc-c4e3-896d08a8dffb",
+  "name" : "primary_cta_text",
+  "label" : "Primary CTA Text",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Contact Me"
+}, {
+  "id" : "fe6957d9-2b26-08e4-4269-4f2a5f187105",
+  "name" : "primary_cta_link",
+  "label" : "Primary CTA Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "FILE", "CONTENT", "BLOG", "PAYMENT", "EMAIL_ADDRESS", "PHONE_NUMBER" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "https://app-eu1.hubspot.com/design-previewer/147143932/modules/325777907914",
+      "type" : "EXTERNAL"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "5cb66ee8-9f3f-3f71-18ad-a95cd92de18b",
+  "name" : "secondary_cta_text",
+  "label" : "Secondary CTA Text",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "View Resume"
+}, {
+  "id" : "d0988c80-3e13-7d56-f7dd-ce608b5cda8c",
+  "name" : "secondary_cta_link",
+  "label" : "Secondary CTA Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "FILE", "CONTENT", "BLOG", "PAYMENT", "EMAIL_ADDRESS", "PHONE_NUMBER" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "https://app-eu1.hubspot.com/design-previewer/147143932/modules/325777907914",
+      "type" : "EXTERNAL"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+} ]

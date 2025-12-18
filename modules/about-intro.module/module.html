@@ -1,0 +1,17 @@
+<section class="about-intro" id="about">
+  <div class="container">
+
+    {% if module.section_title %}
+      <h2 class="about-title">
+        {{ module.section_title }}
+      </h2>
+    {% endif %}
+
+    {% if module.description %}
+      <div class="about-description">
+        {{ module.description }}
+      </div>
+    {% endif %}
+
+  </div>
+</section>

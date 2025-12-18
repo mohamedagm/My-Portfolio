@@ -1,0 +1,68 @@
+[ {
+  "id" : "947f19e5-c86f-ff7d-f615-aab74808d72e",
+  "name" : "section_title",
+  "label" : "Section Title",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Skills OF ME"
+}, {
+  "id" : "c2634d06-2fce-7c4d-9414-a8696dbf3bab",
+  "name" : "skills",
+  "label" : "Skills",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 6,
+    "max" : 6,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "f8c234e7-d875-7df3-641b-c7489936deed",
+    "name" : "skill_name",
+    "label" : "Skill Name",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Mobile Development Flutter"
+  }, {
+    "id" : "db59677a-60f3-6b32-45c4-78dfd4d97a18",
+    "name" : "skill_description",
+    "label" : "Skill Description",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "(Dart) Responsive UI Animations (basic & intermediate)Custom widgets & reusable components"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "skill_name" : "Mobile Development Flutter",
+    "skill_description" : "(Dart) Responsive UI Animations (basic & intermediate)Custom widgets & reusable components"
+  }, {
+    "skill_name" : "Mobile Development Flutter",
+    "skill_description" : "(Dart) Responsive UI Animations (basic & intermediate)Custom widgets & reusable components"
+  }, {
+    "skill_name" : "Mobile Development Flutter",
+    "skill_description" : "(Dart) Responsive UI Animations (basic & intermediate)Custom widgets & reusable components"
+  }, {
+    "skill_name" : "Mobile Development Flutter",
+    "skill_description" : "(Dart) Responsive UI Animations (basic & intermediate)Custom widgets & reusable components"
+  }, {
+    "skill_name" : "Mobile Development Flutter",
+    "skill_description" : "(Dart) Responsive UI Animations (basic & intermediate)Custom widgets & reusable components"
+  }, {
+    "skill_name" : "Mobile Development Flutter",
+    "skill_description" : "(Dart) Responsive UI Animations (basic & intermediate)Custom widgets & reusable components"
+  } ]
+} ]

@@ -1,0 +1,31 @@
+<section class="skills-section" id="skills">
+  <div class="container">
+
+    {% if module.section_title %}
+      <h2 class="skills-title">
+        {{ module.section_title }}
+      </h2>
+    {% endif %}
+
+    <div class="skills-grid">
+      {% for item in module.skills %}
+        <div class="skill-card">
+
+          {% if item.skill_name %}
+            <h3 class="skill-name">
+              {{ item.skill_name }}
+            </h3>
+          {% endif %}
+
+          {% if item.skill_description %}
+            <p class="skill-description">
+              {{ item.skill_description }}
+            </p>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

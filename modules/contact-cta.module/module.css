@@ -1,0 +1,373 @@
+/* ========================================
+   CONTACT SECTION - LIGHTEST GRADIENT
+   ======================================== */
+
+/* السيكشن الرئيسي - الأفتح في الصفحة */
+.contact-cta {
+  position: relative;
+  padding: 160px 0 180px;
+  background: linear-gradient(180deg, #62809d 0%, #6d8ba8 25%, #7997b4 50%, #87a4c0 75%, #96b2cd 100%);
+  overflow: hidden;
+}
+
+/* طبقة ديكور لامعة */
+.contact-cta::before {
+  content: "";
+  position: absolute;
+  top: -350px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.15), transparent 45%);
+  filter: blur(120px);
+  pointer-events: none;
+  animation: decorGlow 8s ease-in-out infinite;
+}
+
+/* طبقة ديكور ثانية من الأسفل */
+.contact-cta::after {
+  content: "";
+  position: absolute;
+  bottom: -300px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(79, 70, 229, 0.12), transparent 50%);
+  filter: blur(110px);
+  pointer-events: none;
+  animation: decorGlow 8s ease-in-out infinite 2s;
+}
+
+/* الكونتينر */
+.contact-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* العنوان - فخم وبارز */
+.contact-title {
+  font-size: clamp(2.5rem, 5.5vw, 3.8rem);
+  font-weight: 700;
+  margin-bottom: 28px;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 30%, #e0e7ff 60%, #d6ddfd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -1px;
+  line-height: 1.15;
+  position: relative;
+  text-shadow: 0 0 50px rgba(139, 92, 246, 0.35);
+  animation: titleSlideIn 0.9s ease-out;
+}
+
+/* خط ديكور فخم تحت العنوان */
+.contact-title::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.8), rgba(79, 70, 229, 0.8), transparent);
+  margin: 28px auto 0;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+  animation: lineExpand 0.9s ease-out 0.3s backwards;
+}
+
+/* الوصف */
+.contact-description {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 50px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  animation: textFadeIn 0.8s ease-out 0.4s backwards;
+}
+
+/* منطقة الأزرار */
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  animation: buttonsFadeIn 0.8s ease-out 0.6s backwards;
+}
+
+/* الزر الأساسي - فخم جداً */
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 42px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px;
+  letter-spacing: 0.5px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+  min-width: 180px;
+}
+
+/* Primary Button - بنفسجي مشع */
+.contact-btn.primary {
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.95), rgba(79, 70, 229, 0.95));
+  color: #ffffff;
+  box-shadow: 
+    0 8px 30px rgba(139, 92, 246, 0.4),
+    0 15px 50px rgba(79, 70, 229, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* تأثير لمعان على Primary */
+.contact-btn.primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.contact-btn.primary:hover::before {
+  transform: translateX(100%);
+}
+
+.contact-btn.primary:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 
+    0 12px 40px rgba(139, 92, 246, 0.5),
+    0 20px 60px rgba(79, 70, 229, 0.4),
+    0 0 60px rgba(139, 92, 246, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  background: linear-gradient(135deg, rgba(139, 92, 246, 1), rgba(79, 70, 229, 1));
+}
+
+.contact-btn.primary:active {
+  transform: translateY(-3px) scale(1.01);
+}
+
+/* Secondary Button - شفاف فخم */
+.contact-btn.secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.95);
+  border-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* تأثير خلفية متحركة على Secondary */
+.contact-btn.secondary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(79, 70, 229, 0.2));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.contact-btn.secondary:hover::before {
+  opacity: 1;
+}
+
+.contact-btn.secondary:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(139, 92, 246, 0.5);
+  color: #ffffff;
+  box-shadow: 
+    0 8px 30px rgba(0, 0, 0, 0.2),
+    0 0 40px rgba(139, 92, 246, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.contact-btn.secondary:active {
+  transform: translateY(-2px);
+}
+
+/* تأثير موجة عند الضغط */
+.contact-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent 70%);
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+.contact-btn:active::after {
+  opacity: 1;
+  transform: scale(1.5);
+  transition: all 0s;
+}
+
+/* ==================== ANIMATIONS ==================== */
+
+/* توهج الديكور */
+@keyframes decorGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.15);
+  }
+}
+
+/* دخول العنوان */
+@keyframes titleSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* توسع الخط */
+@keyframes lineExpand {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 120px;
+    opacity: 1;
+  }
+}
+
+/* fade in للنص */
+@keyframes textFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* fade in للأزرار */
+@keyframes buttonsFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+/* تابلت كبير */
+@media (max-width: 1024px) {
+  .contact-cta {
+    padding: 140px 0 160px;
+  }
+
+  .contact-title {
+    margin-bottom: 26px;
+  }
+
+  .contact-description {
+    font-size: 1.15rem;
+    margin-bottom: 45px;
+  }
+
+  .contact-btn {
+    padding: 17px 38px;
+    font-size: 1rem;
+    min-width: 170px;
+  }
+}
+
+/* تابلت */
+@media (max-width: 768px) {
+  .contact-cta {
+    padding: 120px 24px 140px;
+  }
+
+  .contact-content {
+    max-width: 100%;
+  }
+
+  .contact-title {
+    margin-bottom: 24px;
+    letter-spacing: -0.8px;
+  }
+
+  .contact-title::after {
+    width: 100px;
+    margin-top: 24px;
+  }
+
+  .contact-description {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    margin-bottom: 42px;
+  }
+
+  .contact-actions {
+    gap: 16px;
+  }
+
+  .contact-btn {
+    padding: 16px 36px;
+    font-size: 0.98rem;
+    min-width: 160px;
+  }
+}
+
+/* موبايل */
+@media (max-width: 480px) {
+  .contact-cta {
+    padding: 100px 20px 120px;
+  }
+
+  .contact-title {
+    letter-spacing: -0.6px;
+  }
+
+  .contact-title::after {
+    width: 80px;
+    margin-top: 22px;
+  }
+
+  .contact-description {
+    font-size: 1.05rem;
+    margin-bottom: 38px;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .contact-btn {
+    padding: 15px 32px;
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: 280px;
+  }
+}

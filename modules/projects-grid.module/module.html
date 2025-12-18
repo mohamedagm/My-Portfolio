@@ -1,0 +1,56 @@
+<section class="projects-section" id="projects">
+  <div class="container">
+
+    {% if module.section_title %}
+      <h2 class="projects-title">
+        {{ module.section_title }}
+      </h2>
+    {% endif %}
+
+    <div class="projects-grid">
+      {% for project in module.projects %}
+        <div class="project-card">
+
+          {% if project.project_image.src %}
+            <div class="project-image">
+              <img
+                src="{{ project.project_image.src }}"
+                alt="{{ project.project_image.alt }}"
+                loading="lazy"
+              />
+            </div>
+          {% endif %}
+
+          <div class="project-content">
+
+            {% if project.project_name %}
+              <h3 class="project-name">
+                {{ project.project_name }}
+              </h3>
+            {% endif %}
+
+            {% if project.project_description %}
+              <p class="project-description">
+                {{ project.project_description }}
+              </p>
+            {% endif %}
+
+            {% if project.project_link.url.href %}
+              <a
+                href="{{ project.project_link.url.href }}"
+                class="project-link"
+                {% if project.project_link.open_in_new_tab %}target="_blank"{% endif %}
+                {% if project.project_link.no_follow %}rel="nofollow"{% endif %}
+              >
+                View Project →
+              </a>
+            {% endif %}
+
+          </div>
+
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,33 @@
+<section class="hero-intro">
+  <div class="hero-bg"></div>
+
+  <div class="container hero-content">
+
+    <div class="hero-text">
+
+      {% if module.profile_image.src %}
+        <div class="hero-image-wrapper">
+          <img
+            src="{{ module.profile_image.src }}"
+            alt="{{ module.profile_image.alt }}"
+            loading="lazy"
+          />
+        </div>
+      {% endif %}
+
+      {% if module.headline %}
+        <h1 class="hero-headline">
+          {{ module.headline }}
+        </h1>
+      {% endif %}
+
+      {% if module.subheadline %}
+        <p class="hero-subheadline">
+          {{ module.subheadline }}
+        </p>
+      {% endif %}
+
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,43 @@
+<section id="contact" class="contact-cta">
+  <div class="container contact-content">
+
+    {% if module.title %}
+      <h2 class="contact-title">
+        {{ module.title }}
+      </h2>
+    {% endif %}
+
+    {% if module.description %}
+      <p class="contact-description">
+        {{ module.description }}
+      </p>
+    {% endif %}
+
+    <div class="contact-actions">
+
+      {% if module.primary_cta_link.url.href and module.primary_cta_text %}
+        <a
+          href="{{ module.primary_cta_link.url.href }}"
+          class="contact-btn primary"
+          {% if module.primary_cta_link.open_in_new_tab %}target="_blank"{% endif %}
+          {% if module.primary_cta_link.no_follow %}rel="nofollow"{% endif %}
+        >
+          {{ module.primary_cta_text }}
+        </a>
+      {% endif %}
+
+      {% if module.secondary_cta_link.url.href and module.secondary_cta_text %}
+        <a
+          href="{{ module.secondary_cta_link.url.href }}"
+          class="contact-btn secondary"
+          {% if module.secondary_cta_link.open_in_new_tab %}target="_blank"{% endif %}
+          {% if module.secondary_cta_link.no_follow %}rel="nofollow"{% endif %}
+        >
+          {{ module.secondary_cta_text }}
+        </a>
+      {% endif %}
+
+    </div>
+
+  </div>
+</section>
