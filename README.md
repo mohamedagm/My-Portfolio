@@ -44,3 +44,91 @@ project-theme/
 │
 ├── fields.json                 # Theme fields (global settings)
 └── theme.json                  # HubSpot theme configuration
+```
+## 🧩 Sections Overview
+
+### 1️⃣ Hero / Intro
+
+The main entry point of the portfolio and the first visual impression.
+
+**Purpose:**
+Introduce the developer and clearly communicate identity and role.
+
+**Content:**
+- Profile image
+- Main headline (name or branding)
+- Subheadline (role / short description)
+- Call-to-action button
+
+<img width="100%" alt="Hero Section" src="https://github.com/user-attachments/assets/d197748b-5ddf-4357-be63-f5832cb1c971" />
+
+---
+
+### 2️⃣ About Me
+
+A personal introduction section that explains background and goals.
+
+**Purpose:**
+Give visitors a clear understanding of who the developer is.
+
+**Content:**
+- Section title
+- Editable descriptive text
+- Clean and minimal layout
+
+<img width="100%" alt="About Section" src="https://github.com/user-attachments/assets/f2464642-407b-4506-b6aa-4611b7234724" />
+
+---
+
+### 3️⃣ Skills
+
+A structured section for showcasing technical skills.
+
+**Purpose:**
+Highlight technologies, tools, and areas of expertise.
+
+**Content:**
+- Repeater-based skills list
+- Skill name
+- Skill description
+- Fully editable from the editor
+
+<img width="100%" alt="Skills Section" src="https://github.com/user-attachments/assets/ccd6cf62-69b3-47b0-a608-6140d55f923a" />
+
+---
+
+### 4️⃣ Projects
+
+A visual grid displaying selected projects.
+
+**Purpose:**
+Showcase real work and practical experience.
+
+**Content:**
+- Project cards
+- Project image
+- Project title
+- Short description
+- Optional GitHub / Live Demo link
+
+<img width="100%" alt="Projects Section 1" src="https://github.com/user-attachments/assets/d42eb0a0-a936-4028-9549-f83feec6577a" />
+
+<img width="100%" alt="Projects Section 2" src="https://github.com/user-attachments/assets/e57fd1df-4146-4439-b080-3b23ac219e40" />
+
+---
+
+### 5️⃣ Contact CTA
+
+A call-to-action section encouraging user interaction.
+
+**Purpose:**
+Guide visitors to initiate contact.
+
+**Content:**
+- Short message
+- Call-to-action button
+- Simple and focused layout
+
+<img width="100%" alt="Contact Section" src="https://github.com/user-attachments/assets/d04cd908-0452-4df8-9cd7-603d54e26b62" />
+
+---
