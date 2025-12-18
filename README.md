@@ -8,6 +8,16 @@ inside HubSpot using reusable modules and a flexible page template.
 
 ---
 
+## 🌍 Live Demo
+
+You can try the portfolio live right now at:
+
+🔗 https://147143932.hs-sites-eu1.com/abogm
+
+Explore the full homepage and all sections (Hero, About, Skills, Projects, Contact) in action!
+
+---
+
 ## 🔥 Features
 
 - Custom HubSpot Theme
@@ -132,3 +142,36 @@ Guide visitors to initiate contact.
 <img width="100%" alt="Contact Section" src="https://github.com/user-attachments/assets/d04cd908-0452-4df8-9cd7-603d54e26b62" />
 
 ---
+
+## 🛠 Technologies Used
+
+- HubSpot CMS  
+- HubL  
+- HTML5  
+- CSS3  
+- Drag & Drop (DnD) Architecture  
+
+---
+
+## 🚀 How to Use
+
+1. Upload the theme folder to **HubSpot Design Manager**
+2. Activate the theme
+3. Create a new page using `home.html`
+4. Add, remove, or reorder sections using **Drag & Drop**
+5. Edit content directly from the page editor
+6. Publish 🚀
+
+---
+
+## 📌 Notes
+
+- Designed for easy customization  
+- No coding required for content updates  
+- Optimized for readability and clean UI  
+
+---
+
+## 📄 License
+
+This project is open-source and available for customization.
